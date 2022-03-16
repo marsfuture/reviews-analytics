@@ -30,3 +30,10 @@ print('一共有', len(good), '筆留言裡有good的單字')
 print(good[1])
     
 
+good = [d for d in data if 'good' in d]  #清單進階快寫法，與上面篩選good的留言結果都一樣。
+print('一共有', len(good), '筆留言裡有good的單字')
+print(good[1]) 
+
+#清單進階快寫法練習
+good = ['bad' in d for d in data] #如果每筆留言裡有bad，就會顯示True，反之顯示Fasle。
+print(good)
